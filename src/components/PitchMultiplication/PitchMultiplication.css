@@ -3,6 +3,12 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+
+.PitchMultiplication .title {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
 .PitchMultiplication .pitch-multiplication-row .row-info {
   margin-left: 10px;
   margin-bottom: 50px;

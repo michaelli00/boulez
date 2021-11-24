@@ -10,7 +10,7 @@ import {
 
 import './PitchMultiplication.css';
 
-function PitchMultiplication() {
+function PitchMultiplication(props) {
   const [pm1Selection, setPM1Selection] = useState([]);
   const [pm2Selection, setPM2Selection] = useState([]);
 
@@ -39,7 +39,7 @@ function PitchMultiplication() {
   return (
     <Container className="PitchMultiplication">
       <Row>
-        <h1>Pitch Multiplication</h1>
+        <h1 className="title">Pitch Multiplication</h1>
       </Row>
       <Row className="pitch-multiplication-row">
         <div className="pm-operand-title">
