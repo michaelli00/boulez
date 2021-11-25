@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { 
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -13,7 +13,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Header/>
     <Routes>
       <Route
@@ -29,6 +29,6 @@ ReactDOM.render(
         element={<TotalSerialism/>}
       />
     </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById('root')
 );
