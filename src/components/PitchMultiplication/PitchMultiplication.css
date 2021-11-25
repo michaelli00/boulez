@@ -1,12 +1,20 @@
 .PitchMultiplication {
   margin-top: 30px;
   margin-left: 20px;
-  margin-right: 20px;
 }
 
 .PitchMultiplication .title {
   font-weight: bold;
   margin-bottom: 30px;
+}
+
+.PitchMultiplication .content {
+  margin-left: 0.67em;
+  font-size: 20px;
+}
+
+.PitchMultiplication .content ul {
+  margin-left: 40px;
 }
 
 .PitchMultiplication .pitch-multiplication-row .row-info {
@@ -23,4 +31,9 @@
   margin-left: 20px;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.PitchMultiplication .Footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

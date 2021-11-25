@@ -1,3 +1,7 @@
+.Home {
+  min-height: calc(100vh - 150px);
+}
+
 .Home .title {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -8,6 +12,15 @@
 
 .Home .blurb {
   font-size: 20px;
+}
+
+.Home ul {
+  margin-left: 10px;
+}
+
+.Home .nav-link {
+  font-size: 20px;
+  padding-left: 0px;
 }
 
 .Home .yozora-blockquote {
@@ -24,3 +37,8 @@
 .Home .yozora-blockquote .composer-name-quote {
   text-align: right;
 }
+
+/* .root .Footer { */
+/*   padding-top: 20px; */
+/*   padding-bottom: 20px; */
+/* } */
