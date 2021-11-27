@@ -10,4 +10,4 @@ It's clear that Boulez's mathematical techniques can be modeled from a software 
 
 The website can be accessed at https://michaelli00.github.io/boulez/
 
-The app was developed using React and abcjs, a javascript library for rendering using abc music notation (https://www.npmjs.com/package/react-abcjs)
+The app was developed using React and abcjs, a javascript library for rendering music using abc music notation (https://www.npmjs.com/package/react-abcjs)
