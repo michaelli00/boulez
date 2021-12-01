@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/boulez/static/css/main.f9f6923e.chunk.css",
-    "main.js": "/boulez/static/js/main.0b9ac591.chunk.js",
-    "main.js.map": "/boulez/static/js/main.0b9ac591.chunk.js.map",
+    "main.css": "/boulez/static/css/main.e08ba996.chunk.css",
+    "main.js": "/boulez/static/js/main.8d51c860.chunk.js",
+    "main.js.map": "/boulez/static/js/main.8d51c860.chunk.js.map",
     "runtime-main.js": "/boulez/static/js/runtime-main.83cc7a19.js",
     "runtime-main.js.map": "/boulez/static/js/runtime-main.83cc7a19.js.map",
     "static/css/2.c2736ccc.chunk.css": "/boulez/static/css/2.c2736ccc.chunk.css",
-    "static/js/2.cf4519e6.chunk.js": "/boulez/static/js/2.cf4519e6.chunk.js",
-    "static/js/2.cf4519e6.chunk.js.map": "/boulez/static/js/2.cf4519e6.chunk.js.map",
+    "static/js/2.de440fca.chunk.js": "/boulez/static/js/2.de440fca.chunk.js",
+    "static/js/2.de440fca.chunk.js.map": "/boulez/static/js/2.de440fca.chunk.js.map",
     "index.html": "/boulez/index.html",
     "static/css/2.c2736ccc.chunk.css.map": "/boulez/static/css/2.c2736ccc.chunk.css.map",
-    "static/css/main.f9f6923e.chunk.css.map": "/boulez/static/css/main.f9f6923e.chunk.css.map",
-    "static/js/2.cf4519e6.chunk.js.LICENSE.txt": "/boulez/static/js/2.cf4519e6.chunk.js.LICENSE.txt"
+    "static/css/main.e08ba996.chunk.css.map": "/boulez/static/css/main.e08ba996.chunk.css.map",
+    "static/js/2.de440fca.chunk.js.LICENSE.txt": "/boulez/static/js/2.de440fca.chunk.js.LICENSE.txt",
+    "static/media/Boulez-Frequency-Series.e1eec4e3.jpg": "/boulez/static/media/Boulez-Frequency-Series.e1eec4e3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.83cc7a19.js",
     "static/css/2.c2736ccc.chunk.css",
-    "static/js/2.cf4519e6.chunk.js",
-    "static/css/main.f9f6923e.chunk.css",
-    "static/js/main.0b9ac591.chunk.js"
+    "static/js/2.de440fca.chunk.js",
+    "static/css/main.e08ba996.chunk.css",
+    "static/js/main.8d51c860.chunk.js"
   ]
 }
