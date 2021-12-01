@@ -1,17 +1,33 @@
 .PitchMultiplication {
   margin-top: 30px;
-  margin-left: 20px;
 }
 
 .PitchMultiplication .title {
   font-weight: bold;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+.PitchMultiplication .subtitle {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .PitchMultiplication .content {
   margin-left: 0.67em;
   font-size: 20px;
 }
+
+.PitchMultiplication .content .img-container {
+  text-align: center;
+}
+.PitchMultiplication .content .img-container img {
+  height: 800px;
+  width: auto;
+  text-align: center;
+}
+
 
 .PitchMultiplication .content ul {
   margin-left: 40px;

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/container';
 import Navbar from 'react-bootstrap/navbar';
 import Row from 'react-bootstrap/row';
+import Table from 'react-bootstrap/table';
 import Select from 'react-select'
 import Abcjs from 'react-abcjs';
 import { 
@@ -9,6 +10,7 @@ import {
   TWELVE_TONE_TO_NOTE_MAPPING 
 } from '../../utils/Constants';
 
+import Boulez_Frequency_Series from '../../assets/Boulez-Frequency-Series.jpg';
 import './PitchMultiplication.css';
 
 function PitchMultiplication(props) {
@@ -17,13 +19,13 @@ function PitchMultiplication(props) {
 
   const handlePM1Changes = (vals) => {
     const newPM1 = vals.map(val=>val.value);
-    newPM1.sort((a,b) => a - b);
+    // newPM1.sort((a,b) => a - b);
     setPM1Selection(newPM1);
   };
 
   const handlePM2Changes = (vals) => {
     const newPM2 = vals.map(val=>val.value);
-    newPM2.sort((a,b) => a - b);
+    // newPM2.sort((a,b) => a - b);
     setPM2Selection(newPM2);
     
   };
@@ -34,7 +36,7 @@ function PitchMultiplication(props) {
   const pmResultSet = new Set();
   pm1Selection.map(p1 => pm2Selection.map(p2 => pmResultSet.add((p1 + p2) % 12)));
   const pmResultSelection = [...pmResultSet];
-  pmResultSelection.sort((a,b) => a - b);
+  // pmResultSelection.sort((a,b) => a - b);
   const pmResultString = pmResultSelection.length === 1 ? `${TWELVE_TONE_TO_NOTE_MAPPING[pmResultSelection[0]]}2` : `${pmResultSelection.map(v => TWELVE_TONE_TO_NOTE_MAPPING[v]).join('2')}2`;
 
   return (
@@ -54,11 +56,9 @@ function PitchMultiplication(props) {
             <li> 2 + 4  = 6 </li>
           </ul>
           <p>
-            asd
-          </p>
-
-          <p>
-            Below is a tool that showcases how pitch multiplication can be used to generate a new pitch class set from two existing pitch class sets. To use it, select pitch classes from the dropdown for both the first and second operand. The resulting pitch class set from pitch multipication will be displayed below
+            Below is a tool that showcases how pitch multiplication can be used to generate a new pitch class set from two existing pitch class sets. To use it, select pitch classes from the dropdown for both the first and second operand. The resulting pitch class set from pitch multiplication will be displayed in the third row.
+            <br/>
+            <br/>
           </p>
         </Row>
         <Row className="pitch-multiplication-row">
@@ -122,6 +122,84 @@ function PitchMultiplication(props) {
           <div className="row-info">
             {pmResultSelection.length ? `Resulting pitch classes: ${pmResultSelection.join(', ')}` : ''}
           </div>
+        </Row>
+        <Row className="content">
+          <h2 className="subtitle">How Boulez Used Pitch Multiplication</h2>
+          <p>
+            Looking into Boulez's <i>Le marteau sans maître</i>, one can see that Pitch Multiplication is used in the 1st, 3rd, and 7th movements. In his book <i>Pierre Boulez A World of Harmony</i>, musicologist Lev Koblyakov writes that Boulez uses one general series (3 5 2 1 10 11 9 0 8 4 7 6) and uses different divisions to "create an ensemble of series of frequency groups". The divisions are based on the "proportion row 24213, which is consistently rotated," creating five different series. Below is a diagram from the book explaining how rotation of the proportion row generated the different series.<sup>3</sup>
+          </p>
+          <div className="img-container">
+            <img src={Boulez_Frequency_Series} alt="Boulez Frequency Series"/>
+          </div>
+          <p>
+            From series I above, one can see that the proportion row 24213 is used to divide the general series (3 5 2 1 10 11 9 0 8 4 7 6) into frequency groups of size 2, 4, 2, 1, and 3.
+          </p>
+          <p>
+            From series II above, one can see that the proportion row 24213 has been rotated into 42132, which is used to divide the general series into frequency groups of size 4, 2, 1, 3, 2. The other series follow a similar pattern of rotating the proportion row.
+          </p>
+          <p> 
+            According to Koblyakov, these series, using pitch multiplication of frequency groups, create <i>harmonic fields</i> that create new groups when multiplied by frequency groups from the same series.<sup>3</sup> Below is a table containing the harmonic fields (labeled using letters) of the series from the diagram above.
+          </p>
+          <Table striped bordered>
+            <thead>
+              <tr>
+                <th></th>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+                <th>d</th>
+                <th>e</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>I</td>
+                <td>3 5</td>
+                <td>2 1 10 11</td>
+                <td>9 0</td>
+                <td>8</td>
+                <td>4 7 6</td>
+              </tr>
+              <tr>
+                <td>II</td>
+                <td>3 5 2 1</td>
+                <td>10 11</td>
+                <td>9</td>
+                <td>0 8 4</td>
+                <td>7 6</td>
+              </tr>
+              <tr>
+                <td>III</td>
+                <td>3 5</td>
+                <td>2</td>
+                <td>1 10 11</td>
+                <td>9 0</td>
+                <td>8 4 7 6</td>
+              </tr>
+              <tr>
+                <td>IV</td>
+                <td>3</td>
+                <td>5 2 1</td>
+                <td>10 11</td>
+                <td>9 0 8 4</td>
+                <td>7 6</td>
+              </tr>
+              <tr>
+                <td>V</td>
+                <td>3 5 2</td>
+                <td>1 10</td>
+                <td>11 9 0 8</td>
+                <td>4 7</td>
+                <td>6</td>
+              </tr>
+            </tbody>
+          </Table>
+          <p>
+            For example, taking frequency groups b and c from series I, multiplying them to gives the group bc = (11 2 10 1 7 8).
+          </p>
+          <p>
+            Boulez uses 
+          </p>
         </Row>
       </Container>
       <Navbar bg="light" variant="light" expand="lg" className="Footer">
