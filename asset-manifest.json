@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/boulez/static/css/main.fd0cbaa3.chunk.css",
-    "main.js": "/boulez/static/js/main.36eb193d.chunk.js",
-    "main.js.map": "/boulez/static/js/main.36eb193d.chunk.js.map",
+    "main.css": "/boulez/static/css/main.375401c5.chunk.css",
+    "main.js": "/boulez/static/js/main.a8af0cdd.chunk.js",
+    "main.js.map": "/boulez/static/js/main.a8af0cdd.chunk.js.map",
     "runtime-main.js": "/boulez/static/js/runtime-main.83cc7a19.js",
     "runtime-main.js.map": "/boulez/static/js/runtime-main.83cc7a19.js.map",
-    "static/css/2.ecf46905.chunk.css": "/boulez/static/css/2.ecf46905.chunk.css",
-    "static/js/2.de440fca.chunk.js": "/boulez/static/js/2.de440fca.chunk.js",
-    "static/js/2.de440fca.chunk.js.map": "/boulez/static/js/2.de440fca.chunk.js.map",
+    "static/css/2.5ed55169.chunk.css": "/boulez/static/css/2.5ed55169.chunk.css",
+    "static/js/2.5718101d.chunk.js": "/boulez/static/js/2.5718101d.chunk.js",
+    "static/js/2.5718101d.chunk.js.map": "/boulez/static/js/2.5718101d.chunk.js.map",
     "index.html": "/boulez/index.html",
-    "static/css/2.ecf46905.chunk.css.map": "/boulez/static/css/2.ecf46905.chunk.css.map",
-    "static/css/main.fd0cbaa3.chunk.css.map": "/boulez/static/css/main.fd0cbaa3.chunk.css.map",
-    "static/js/2.de440fca.chunk.js.LICENSE.txt": "/boulez/static/js/2.de440fca.chunk.js.LICENSE.txt",
-    "static/media/Boulez-Frequency-Series.e1eec4e3.jpg": "/boulez/static/media/Boulez-Frequency-Series.e1eec4e3.jpg"
+    "static/css/2.5ed55169.chunk.css.map": "/boulez/static/css/2.5ed55169.chunk.css.map",
+    "static/css/main.375401c5.chunk.css.map": "/boulez/static/css/main.375401c5.chunk.css.map",
+    "static/js/2.5718101d.chunk.js.LICENSE.txt": "/boulez/static/js/2.5718101d.chunk.js.LICENSE.txt",
+    "static/media/Boulez-Frequency-Series.e1eec4e3.jpg": "/boulez/static/media/Boulez-Frequency-Series.e1eec4e3.jpg",
+    "static/media/style.css": "/boulez/static/media/step-backward.668fe580.svg",
+    "static/media/pitch-duration-organization.f3398d03.jpg": "/boulez/static/media/pitch-duration-organization.f3398d03.jpg",
+    "static/media/pm-mvmt3.a5f8a91d.png": "/boulez/static/media/pm-mvmt3.a5f8a91d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.83cc7a19.js",
-    "static/css/2.ecf46905.chunk.css",
-    "static/js/2.de440fca.chunk.js",
-    "static/css/main.fd0cbaa3.chunk.css",
-    "static/js/main.36eb193d.chunk.js"
+    "static/css/2.5ed55169.chunk.css",
+    "static/js/2.5718101d.chunk.js",
+    "static/css/main.375401c5.chunk.css",
+    "static/js/main.a8af0cdd.chunk.js"
   ]
 }
