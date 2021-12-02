@@ -22,10 +22,14 @@
 .PitchMultiplication .content .img-container {
   text-align: center;
 }
-.PitchMultiplication .content .img-container img {
+.PitchMultiplication .content .img-container .freq-series {
   height: 800px;
   width: auto;
-  text-align: center;
+}
+
+.PitchMultiplication .content .img-container .mvmt3 {
+  height: 300px;
+  width: auto;
 }
 
 

@@ -4,13 +4,14 @@ import Navbar from 'react-bootstrap/navbar';
 import Row from 'react-bootstrap/row';
 import Table from 'react-bootstrap/table';
 import Select from 'react-select'
-import Abcjs from 'react-abcjs';
+import { Notation, Midi } from 'react-abc';
 import { 
   TWELVE_TONE_DROPDOWN_OPTIONS,
   TWELVE_TONE_TO_NOTE_MAPPING 
 } from '../../utils/Constants';
 
 import Boulez_Frequency_Series from '../../assets/Boulez-Frequency-Series.jpg';
+import PM_Mvmt3 from '../../assets/pm-mvmt3.png';
 import './PitchMultiplication.css';
 
 function PitchMultiplication(props) {
@@ -19,13 +20,11 @@ function PitchMultiplication(props) {
 
   const handlePM1Changes = (vals) => {
     const newPM1 = vals.map(val=>val.value);
-    // newPM1.sort((a,b) => a - b);
     setPM1Selection(newPM1);
   };
 
   const handlePM2Changes = (vals) => {
     const newPM2 = vals.map(val=>val.value);
-    // newPM2.sort((a,b) => a - b);
     setPM2Selection(newPM2);
     
   };
@@ -36,7 +35,6 @@ function PitchMultiplication(props) {
   const pmResultSet = new Set();
   pm1Selection.map(p1 => pm2Selection.map(p2 => pmResultSet.add((p1 + p2) % 12)));
   const pmResultSelection = [...pmResultSet];
-  // pmResultSelection.sort((a,b) => a - b);
   const pmResultString = pmResultSelection.length === 1 ? `${TWELVE_TONE_TO_NOTE_MAPPING[pmResultSelection[0]]}2` : `${pmResultSelection.map(v => TWELVE_TONE_TO_NOTE_MAPPING[v]).join('2')}2`;
 
   return (
@@ -76,10 +74,8 @@ function PitchMultiplication(props) {
               onChange={handlePM1Changes}
             />
           </div>
-          <Abcjs
-            abcNotation={`X:1\nK:C\nL:4\n${pm1NotesString}`}
-            parserParams={{}}
-            engraverParams={{}}
+          <Notation
+            notation={`X:1\nK:C\nL:4\n${pm1NotesString}`}
             renderParams={{ viewportHorizontal: true }}
           />
           <div className="row-info">
@@ -101,10 +97,8 @@ function PitchMultiplication(props) {
               onChange={handlePM2Changes}
             />
           </div>
-          <Abcjs
-            abcNotation={`X:1\nK:C\nL:4\n${pm2NotesString}`}
-            parserParams={{}}
-            engraverParams={{}}
+          <Notation
+            notation={`X:1\nK:C\nL:4\n${pm2NotesString}`}
             renderParams={{ viewportHorizontal: true }}
           />
           <div className="row-info">
@@ -113,10 +107,8 @@ function PitchMultiplication(props) {
         </Row>
         <Row className="pitch-multiplication-row">
           <h3>Resulting Pitch Classes from Pitch Multiplication</h3>
-          <Abcjs
-            abcNotation={`X:1\nK:C\nL:4\n${pmResultString}`}
-            parserParams={{}}
-            engraverParams={{}}
+          <Notation
+            notation={`X:1\nK:C\nL:4\n${pmResultString}`}
             renderParams={{ viewportHorizontal: true }}
           />
           <div className="row-info">
@@ -129,7 +121,7 @@ function PitchMultiplication(props) {
             Looking into Boulez's <i>Le marteau sans maître</i>, one can see that Pitch Multiplication is used in the 1st, 3rd, and 7th movements. In his book <i>Pierre Boulez A World of Harmony</i>, musicologist Lev Koblyakov writes that Boulez uses one general series (3 5 2 1 10 11 9 0 8 4 7 6) and uses different divisions to "create an ensemble of series of frequency groups". The divisions are based on the "proportion row 24213, which is consistently rotated," creating five different series. Below is a diagram from the book explaining how rotation of the proportion row generated the different series.<sup>3</sup>
           </p>
           <div className="img-container">
-            <img src={Boulez_Frequency_Series} alt="Boulez Frequency Series"/>
+            <img src={Boulez_Frequency_Series} alt="Boulez Frequency Series" className="freq-series"/>
           </div>
           <p>
             From series I above, one can see that the proportion row 24213 is used to divide the general series (3 5 2 1 10 11 9 0 8 4 7 6) into frequency groups of size 2, 4, 2, 1, and 3.
@@ -138,7 +130,7 @@ function PitchMultiplication(props) {
             From series II above, one can see that the proportion row 24213 has been rotated into 42132, which is used to divide the general series into frequency groups of size 4, 2, 1, 3, 2. The other series follow a similar pattern of rotating the proportion row.
           </p>
           <p> 
-            According to Koblyakov, these series, using pitch multiplication of frequency groups, create <i>harmonic fields</i> that create new groups when multiplied by frequency groups from the same series.<sup>3</sup> Below is a table containing the harmonic fields (labeled using letters) of the series from the diagram above.
+            According to Koblyakov, these series, using pitch multiplication of frequency groups, create <i>harmonic fields</i> that construct new groups when multiplied by frequency groups from the same series.<sup>3</sup> Below is a table containing the harmonic fields (labeled using letters) of the series from the diagram above.
           </p>
           <Table striped bordered>
             <thead>
@@ -198,7 +190,13 @@ function PitchMultiplication(props) {
             For example, taking frequency groups b and c from series I, multiplying them to gives the group bc = (11 2 10 1 7 8).
           </p>
           <p>
-            Boulez uses 
+            Koblyakov found that pitch class sets from the 1st, 3rd, and 7th movements were derived from multiplying various harmonic fields. For example, the pitch classes used in measure 3 of the 3rd movement comes directly from multiplying harmonic fields b and c to get the group bc = (11 2 10 1 7 8).
+          </p>
+          <div className="img-container">
+            <img src={PM_Mvmt3} alt="Le marteau sans maître mvmt 3" className="mvmt3"/>
+          </div>
+          <p>
+            In the flute line, from left to right, the pitch classes are (2, 10, 1, 11, 8, 7)
           </p>
         </Row>
       </Container>
