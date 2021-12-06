@@ -1,0 +1,15 @@
+.Bibliography {
+  margin-top: 30px;
+}
+.Bibliography .title {
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.Bibliography .content {
+  margin-left: 4em;
+  font-size: 20px;
+  line-height: 40px;
+  text-indent: -2em;
+}

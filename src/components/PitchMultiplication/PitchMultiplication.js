@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/container';
-import Navbar from 'react-bootstrap/navbar';
 import Row from 'react-bootstrap/row';
+import Navbar from 'react-bootstrap/navbar';
 import Table from 'react-bootstrap/table';
 import Select from 'react-select'
-import { Notation, Midi } from 'react-abc';
+import { Notation } from 'react-abc';
 import { 
   TWELVE_TONE_DROPDOWN_OPTIONS,
   TWELVE_TONE_TO_NOTE_MAPPING 
@@ -45,7 +45,7 @@ function PitchMultiplication(props) {
         </Row>
         <Row className="content">
           <p>
-            The idea behind pitch multiplication is to take two sets from a group of pitch class sets and "sum of every possible pairing between them".<sup>2</sup> Note that any duplicate pitch classes in the resulting set are removed. For example, let a = (1 2) and b = (3 4) be pitch class sets. Then the pitch multipication of these two sets, denoted ab, yields (4 5 6). This comes from
+            The idea behind pitch multiplication is to take two sets from a group of pitch class sets and "sum of every possible pairing between them".<sup>6</sup> Note that any duplicate pitch classes in the resulting set are removed. For example, let a = (1 2) and b = (3 4) be pitch class sets. Then the pitch multipication of these two sets, denoted ab, yields (4 5 6). This comes from
           </p>
           <ul>
             <li> 1 + 3  = 4 </li>
@@ -118,7 +118,7 @@ function PitchMultiplication(props) {
         <Row className="content">
           <h2 className="subtitle">How Boulez Used Pitch Multiplication</h2>
           <p>
-            Looking into Boulez's <i>Le marteau sans maître</i>, one can see that Pitch Multiplication is used in the 1st, 3rd, and 7th movements. In his book <i>Pierre Boulez A World of Harmony</i>, musicologist Lev Koblyakov writes that Boulez uses one general series (3 5 2 1 10 11 9 0 8 4 7 6) and uses different divisions to "create an ensemble of series of frequency groups". The divisions are based on the "proportion row 24213, which is consistently rotated," creating five different series. Below is a diagram from the book explaining how rotation of the proportion row generated the different series.<sup>3</sup>
+            Looking into Boulez's <i>Le Marteau sans Maître</i>, one can see that Pitch Multiplication is used in the 1st, 3rd, and 7th movements. In his book <i>Pierre Boulez A World of Harmony</i>, musicologist Lev Koblyakov writes that Boulez uses one general series (3 5 2 1 10 11 9 0 8 4 7 6) and uses different divisions to "create an ensemble of series of frequency groups".<sup>7</sup> The divisions are based on the "proportion row 24213, which is consistently rotated," creating five different series. Below is a diagram from the book explaining how rotation of the proportion row generated the different series.<sup>7</sup>
           </p>
           <div className="img-container">
             <img src={Boulez_Frequency_Series} alt="Boulez Frequency Series" className="freq-series"/>
@@ -130,7 +130,7 @@ function PitchMultiplication(props) {
             From series II above, one can see that the proportion row 24213 has been rotated into 42132, which is used to divide the general series into frequency groups of size 4, 2, 1, 3, 2. The other series follow a similar pattern of rotating the proportion row.
           </p>
           <p> 
-            According to Koblyakov, these series, using pitch multiplication of frequency groups, create <i>harmonic fields</i> that construct new groups when multiplied by frequency groups from the same series.<sup>3</sup> Below is a table containing the harmonic fields (labeled using letters) of the series from the diagram above.
+            According to Koblyakov, these series, using pitch multiplication of frequency groups, create <i>harmonic fields</i> that construct new groups when multiplied by frequency groups from the same series.<sup>7</sup> Below is a table containing the harmonic fields (labeled using letters) of the series from the diagram above.
           </p>
           <Table striped bordered>
             <thead>
@@ -190,19 +190,26 @@ function PitchMultiplication(props) {
             For example, taking frequency groups b and c from series I, multiplying them to gives the group bc = (11 2 10 1 7 8).
           </p>
           <p>
-            Koblyakov found that pitch class sets from the 1st, 3rd, and 7th movements were derived from multiplying various harmonic fields. For example, the pitch classes used in measure 3 of the 3rd movement comes directly from multiplying harmonic fields b and c to get the group bc = (11 2 10 1 7 8).
+            Some of the pitch class sets from the 1st, 3rd, and 7th movements were derived from multiplying various harmonic fields. For example, the pitch classes used in measure 3 of the 3rd movement comes directly from multiplying harmonic fields b and c to get the group bc = (11 2 10 1 7 8).<sup>6</sup>
           </p>
           <div className="img-container">
             <img src={PM_Mvmt3} alt="Le marteau sans maître mvmt 3" className="mvmt3"/>
           </div>
           <p>
-            In the flute line, from left to right, the pitch classes are (2, 10, 1, 11, 8, 7)
+            In the flute line, from left to right, the pitch classes are (2, 10, 1, 11, 8, 7). The image above is from the score of <i>Le Marteau sans Maître</i> provided by Alexander Street.<sup>8</sup>
+          </p>
+          <p>
+            TODO find more examples of Pitch Mulitplication from Boulez's works
           </p>
         </Row>
       </Container>
       <Navbar bg="light" variant="light" expand="lg" className="Footer">
         <Container>
-          2. Saman Samadi, “An Analytical Study on Pierre Boulez’s Le Marteau sans Maître,” Research Catalogue, September 28, 2020, https://www.researchcatalogue.net/view/718708/718709.
+          6. Saman Samadi, “An Analytical Study on Pierre Boulez’s Le Marteau sans Maître,” Research Catalogue, September 28, 2020, https://www.researchcatalogue.net/view/718708/718709.
+          <br/>
+          7. Lev Koblyakov, Pierre Boulez : A World of Harmony (Reading: Harwood Academic Publishers, 1992), 3-5.
+          <br/>
+          8. Pierre Boulez, Le Marteau sans Maître, Universal Edition, 1964, https://search.alexanderstreet.com/view/work/bibliographic_entity%7Cscore%7C553558.
         </Container>
       </Navbar>
     </React.Fragment>

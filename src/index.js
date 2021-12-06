@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import App from './App';
 import Header from './components/Header/Header';
+import Bibliography from './components/Bibliography/Bibliography';
 import PitchMultiplication from './components/PitchMultiplication/PitchMultiplication';
 import TotalSerialism from './components/TotalSerialism/TotalSerialism';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -27,6 +28,10 @@ ReactDOM.render(
       <Route
         path="/total-serialism"
         element={<TotalSerialism/>}
+      />
+      <Route
+        path="/bibliography"
+        element={<Bibliography/>}
       />
     </Routes>
   </HashRouter>,

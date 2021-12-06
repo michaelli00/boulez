@@ -14,6 +14,7 @@ function Header() {
             <NavLink to="/" className="nav-link">Home</NavLink>
             <NavLink to="/total-serialism" className="nav-link">Total Serialism</NavLink>
             <NavLink to="/pitch-multiplication" className="nav-link">Pitch Multiplication</NavLink>
+            <NavLink to="/bibliography" className="nav-link">Bibliography</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

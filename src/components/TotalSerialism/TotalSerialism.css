@@ -1,5 +1,6 @@
 .TotalSerialism {
   margin-top: 30px;
+  min-height: calc(100vh - 150px);
 }
 
 .TotalSerialism .title {
@@ -21,7 +22,7 @@
   text-align: center;
 }
 .TotalSerialism .content .img-container img {
-  height: 125px;
+  height: 115px;
   width: auto;
   text-align: center;
 }
