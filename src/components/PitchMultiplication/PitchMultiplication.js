@@ -190,7 +190,7 @@ function PitchMultiplication(props) {
             For example, taking frequency groups b and c from series I, multiplying them to gives the group bc = (11 2 10 1 7 8).
           </p>
           <p>
-            Some of the pitch class sets from the 1st, 3rd, and 7th movements were derived from multiplying various harmonic fields. For example, the pitch classes used in measure 3 of the 3rd movement comes directly from multiplying harmonic fields b and c to get the group bc = (11 2 10 1 7 8).<sup>7</sup>
+            Some of the pitch class sets from the 1st, 3rd, and 7th movements were derived from multiplying various harmonic fields. For example, the pitch classes used in measure 3 of the 3rd movement comes directly from multiplying harmonic fields b and c to get the group bc = (11 2 10 1 7 8), coresponding to the notes (B D B♭ D♭ G A♭).<sup>7</sup>
           </p>
           <div className="img-container">
             <img src={PM_Mvmt3} alt="Le marteau sans maître mvmt 3" className="mvmt3"/>
@@ -198,10 +198,10 @@ function PitchMultiplication(props) {
         </Row>
         <Row className="content">
           <p>
-            In the flute line, from left to right, the pitch classes are (2, 10, 1, 11, 8, 7). The image above is from the score of <i>Le Marteau sans Maître</i> provided by Alexander Street.<sup>9</sup>
+            In the flute line, from left to right, the pitch classes are (2, 10, 1, 11, 8, 7), corresponding to the notes (D B♭ D♭ B A♭ G). The image above is from the score of <i>Le Marteau sans Maître</i> provided by Alexander Street.<sup>9</sup>
           </p>
           <p>
-            Other measures from <i>Le marteau sans maître</i> are composed in a similar manner. For example, measure 1 consists of the pitch classes (4 6 2 7 5 1 3) which comes from multiplying the harmonic fields a and b from  series I, ab = (5 4 1 2 7 6 3).
+            Other measures from <i>Le marteau sans maître</i> are composed in a similar manner. For example, measure 1 consists of the pitch classes (4 6 2 7 5 1 3), corresponding to the notes (E F# D G F D♭ E♭) which comes from multiplying the harmonic fields a and b from  series I, ab = (5 4 1 2 7 6 3), corresponding to the notes (F E D♭ D G F# E♭).
           </p>
         </Row>
       </Container>
