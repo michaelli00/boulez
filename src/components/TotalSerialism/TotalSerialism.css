@@ -5,13 +5,21 @@
 
 .TotalSerialism .title {
   font-weight: bold;
-  margin-bottom: 30px;
   text-align: center;
 }
 
 .TotalSerialism .content {
+  margin-top: 30px;
   margin-left: 0.67em;
   font-size: 20px;
+}
+
+.TotalSerialism .content ul {
+  margin-left: 10px;
+}
+
+.TotalSerialism .content ul li {
+  margin-top: 20px;
 }
 
 .TotalSerialism .form-row {
@@ -25,4 +33,9 @@
   height: 115px;
   width: auto;
   text-align: center;
+}
+
+.TotalSerialism .content .img-container .music {
+  height: 800px;
+  width: auto;
 }

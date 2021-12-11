@@ -30,10 +30,8 @@ function App() {
         </div>
         <br/>
         <ul>
-          <li> <NavLink to="/total-serialism" className="nav-link">Total Serialism (Partially done)</NavLink></li>
-          <li> <NavLink to="/pitch-multiplication" className="nav-link">Pitch Multiplication (Mostly done)</NavLink> </li>
-          <li> If I have time, I will create another page that allows users to compose music using pitch duration serialism and pitch multiplication</li>
-          <li> <NavLink to="/bibliography" className="nav-link">Bibliography</NavLink> </li>
+          <li> <NavLink to="/total-serialism" className="nav-link">Total Serialism</NavLink></li>
+          <li> <NavLink to="/pitch-multiplication" className="nav-link">Pitch Multiplication</NavLink> </li>
         </ul>
         <br/>
         <br/>
