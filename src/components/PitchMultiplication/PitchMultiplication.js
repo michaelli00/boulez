@@ -195,8 +195,13 @@ function PitchMultiplication(props) {
           <div className="img-container">
             <img src={PM_Mvmt3} alt="Le marteau sans maître mvmt 3" className="mvmt3"/>
           </div>
+        </Row>
+        <Row className="content">
           <p>
             In the flute line, from left to right, the pitch classes are (2, 10, 1, 11, 8, 7). The image above is from the score of <i>Le Marteau sans Maître</i> provided by Alexander Street.<sup>9</sup>
+          </p>
+          <p>
+            Other measures from <i>Le marteau sans maître</i> are composed in a similar manner. For example, measure 1 consists of the pitch classes (4 6 2 7 5 1 3) which comes from multiplying the harmonic fields a and b from  series I, ab = (5 4 1 2 7 6 3).
           </p>
         </Row>
       </Container>

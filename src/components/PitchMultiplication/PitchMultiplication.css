@@ -4,7 +4,6 @@
 
 .PitchMultiplication .title {
   font-weight: bold;
-  margin-bottom: 30px;
   text-align: center;
 }
 
@@ -15,6 +14,7 @@
 }
 
 .PitchMultiplication .content {
+  margin-top: 30px;
   margin-left: 0.67em;
   font-size: 20px;
 }
@@ -28,7 +28,7 @@
 }
 
 .PitchMultiplication .content .img-container .mvmt3 {
-  height: 300px;
+  height: 800px;
   width: auto;
 }
 
