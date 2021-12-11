@@ -113,17 +113,17 @@ class TotalSerialism extends React.Component {
               </Form.Group>
             </Form>
             {notation && 
-              <div>
-              <Notation
-                notation={notationString}
-                engraverParams={{scale: 1.3}}
-              />
-              <Midi 
-                key={notationString}
-                notation={notationString}
-                midiParams={{qpm: 45}}
-              />
-              </div>
+              <React.Fragment>
+                <Notation
+                  notation={notationString}
+                  engraverParams={{scale: 1.3}}
+                />
+                <Midi 
+                  key={notationString}
+                  notation={notationString}
+                  midiParams={{qpm: 45}}
+                />
+              </React.Fragment>
             }
           </Row>
           <Row className="content">
@@ -135,20 +135,19 @@ class TotalSerialism extends React.Component {
             </p>
             <p>
               An example of where Boulez used serial pitch duration is in his <i>Structures Ia</i>. Looking at the first couple of measures of the movement, one can see that the pitches and pitch durations are based on the pitch class set (3 2 9 10 7 6 4 1 0 10 5 11), which corresponds to (E♭ D A, A♭, G, F#, E, C#, C, B♭, F, B). In particular
-
-              <ul>
-                <li> 
-                  Notes for the piano 1 part are determined by P<sub>0</sub> (translation by 0) so the pitch class set is (3 2 9 10 7 6 4 1 0 10 5 11) and notes are (E♭ D A, A♭, G, F#, E, C#, C, B♭, F, B). Furthermore, these pitches are assigned ordinal numbers in the following manner:<sup>4</sup>
-                  <div className="img-container">
-                    <img src={P1_Ordinal} alt="Piano 1 Ordinals"/>
-                  </div> 
-                  The ordinal numbers will be important when analyzing pitch durations
-                </li>
-                <li> Pitch durations for the piano 1 part are determined by RI<sub>4</sub> (retrograde inversion by 4) so the pitch class set is (11 5 0 10 9 6 4 3 2 1 8 7), which corresponds to (B F C B♭ A F# E E♭ D C# A♭ G). However, since we are dealing with pitch duration, we map each pitch class to its respective ordinal number, resulting in the pitch duration set is (12 11 9 10 3 6 7 1 2 8 4 5). Ignoring the pitch classes of the notes, these values are the length of the note, in terms of multiplies of 32nd notes, and determine the order in which pitch durations occur. For example, the first two notes of the piano 1 part are 12 times the length of a 32nd note (dotted quarter) and 11 times the length of 32nd note, respectively.<sup>4</sup> </li>
-                <li> Notes for the piano 2 part are determined by I<sub>0</sub> (inversion by 0) so the pitch class set is (3 4 9 10 11 0 2 5 6 8 1 7) and notes are (E♭ E A B♭ B C D F F# A♭ C# G).<sup>4</sup> </li>
-                <li> Pitch durations for the piano 2 part are determined by R<sub>8</sub> (retrograde by 8) so the pitch class set is (7 1 6 8 9 0 2 3 4 5 10 11), which corresponds to (G C# F# A♭ A C D E♭ E F B♭ B). However, since we are dealing with pitch duration, we map each pitch class to its respective ordinal number, resulting in the pitch duration set is (5 8 6 4 3 9 2 1 7 11 10 12). Ignoring the pitch classes of the notes, these values are the length of the note, in terms of multiplies of 32nd notes, and determine the order in which pitch durations occur. For example, the first two notes of the piano 2 part are 5 times the length of a 32nd note and 8 times the length of 32nd note (eighth note), respectively.<sup>4</sup> </li>
-              </ul>
             </p>
+            <ul>
+              <li> 
+                Notes for the piano 1 part are determined by P<sub>0</sub> (translation by 0) so the pitch class set is (3 2 9 10 7 6 4 1 0 10 5 11) and notes are (E♭ D A, A♭, G, F#, E, C#, C, B♭, F, B). Furthermore, these pitches are assigned ordinal numbers in the following manner:<sup>4</sup>
+                <div className="img-container">
+                  <img src={P1_Ordinal} alt="Piano 1 Ordinals"/>
+                </div> 
+                The ordinal numbers will be important when analyzing pitch durations
+              </li>
+              <li> Pitch durations for the piano 1 part are determined by RI<sub>4</sub> (retrograde inversion by 4) so the pitch class set is (11 5 0 10 9 6 4 3 2 1 8 7), which corresponds to (B F C B♭ A F# E E♭ D C# A♭ G). However, since we are dealing with pitch duration, we map each pitch class to its respective ordinal number, resulting in the pitch duration set is (12 11 9 10 3 6 7 1 2 8 4 5). Ignoring the pitch classes of the notes, these values are the length of the note, in terms of multiplies of 32nd notes, and determine the order in which pitch durations occur. For example, the first two notes of the piano 1 part are 12 times the length of a 32nd note (dotted quarter) and 11 times the length of 32nd note, respectively.<sup>4</sup> </li>
+              <li> Notes for the piano 2 part are determined by I<sub>0</sub> (inversion by 0) so the pitch class set is (3 4 9 10 11 0 2 5 6 8 1 7) and notes are (E♭ E A B♭ B C D F F# A♭ C# G).<sup>4</sup> </li>
+              <li> Pitch durations for the piano 2 part are determined by R<sub>8</sub> (retrograde by 8) so the pitch class set is (7 1 6 8 9 0 2 3 4 5 10 11), which corresponds to (G C# F# A♭ A C D E♭ E F B♭ B). However, since we are dealing with pitch duration, we map each pitch class to its respective ordinal number, resulting in the pitch duration set is (5 8 6 4 3 9 2 1 7 11 10 12). Ignoring the pitch classes of the notes, these values are the length of the note, in terms of multiplies of 32nd notes, and determine the order in which pitch durations occur. For example, the first two notes of the piano 2 part are 5 times the length of a 32nd note and 8 times the length of 32nd note (eighth note), respectively.<sup>4</sup> </li>
+            </ul>
             <p>
               Throughout the movement, pitch and duration are determined by pairings, similar to the one above. In particular, the "first progression (mm. 1-64) displays P-I pairings for pitch and RI-R for duration; the second involves combinations of RI-R for pitch and I-P for duration."<sup>4</sup>
             </p>
