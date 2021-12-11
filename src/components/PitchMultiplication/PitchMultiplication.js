@@ -201,7 +201,7 @@ function PitchMultiplication(props) {
             In the flute line, from left to right, the pitch classes are (2, 10, 1, 11, 8, 7), corresponding to the notes (D B♭ D♭ B A♭ G). The image above is from the score of <i>Le Marteau sans Maître</i> provided by Alexander Street.<sup>9</sup>
           </p>
           <p>
-            Other measures from <i>Le marteau sans maître</i> are composed in a similar manner. For example, measure 1 consists of the pitch classes (4 6 2 7 5 1 3), corresponding to the notes (E F# D G F D♭ E♭) which comes from multiplying the harmonic fields a and b from  series I, ab = (5 4 1 2 7 6 3), corresponding to the notes (F E D♭ D G F# E♭).
+            Other measures from <i>Le Marteau sans Maître</i> are composed in a similar manner. For example, measure 1 consists of the pitch classes (4 6 2 7 5 1 3), corresponding to the notes (E F# D G F D♭ E♭) which comes from multiplying the harmonic fields a and b from  series I, ab = (5 4 1 2 7 6 3), corresponding to the notes (F E D♭ D G F# E♭).
           </p>
         </Row>
       </Container>
