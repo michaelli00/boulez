@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/boulez/static/css/main.2d60d69b.chunk.css",
-    "main.js": "/boulez/static/js/main.b1ad3545.chunk.js",
-    "main.js.map": "/boulez/static/js/main.b1ad3545.chunk.js.map",
+    "main.js": "/boulez/static/js/main.e9d6eac2.chunk.js",
+    "main.js.map": "/boulez/static/js/main.e9d6eac2.chunk.js.map",
     "runtime-main.js": "/boulez/static/js/runtime-main.83cc7a19.js",
     "runtime-main.js.map": "/boulez/static/js/runtime-main.83cc7a19.js.map",
     "static/css/2.5ed55169.chunk.css": "/boulez/static/css/2.5ed55169.chunk.css",
@@ -24,6 +24,6 @@
     "static/css/2.5ed55169.chunk.css",
     "static/js/2.eed5826e.chunk.js",
     "static/css/main.2d60d69b.chunk.css",
-    "static/js/main.b1ad3545.chunk.js"
+    "static/js/main.e9d6eac2.chunk.js"
   ]
 }
