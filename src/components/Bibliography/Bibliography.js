@@ -13,6 +13,9 @@ class Bibliography extends React.Component {
         </Row>
         <Row className="content">
           <p>
+            Bleek, Tobias. “Explore the Score | Pierre Boulez: Notations | History and Context  | a Journeyman Composition.” explorethescore.org, n.d. https://explorethescore.org/pierre-boulez-douze-notations-history-and-context-a-journeyman-composition.html.
+          </p>
+          <p>
             Boulez, Pierre. <i>Le Marteau Sans Maître</i>. Universal Edition, 1964. <a href="https://search.alexanderstreet.com/view/work/bibliographic_entity%7Cscore%7C553558">https://search.alexanderstreet.com/view/work/bibliographic_entity%7Cscore%7C553558</a>.
           </p>
           <p>

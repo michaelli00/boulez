@@ -26,6 +26,10 @@ function App() {
         </div>
         <br/>
         <div className="blurb">
+          Interestingly enough, Boulez originally was studying mathematics before he move "from Lyons to Paris in order to devote himself entirely to music" in 1943.<sup>3</sup> He was 18 years old at the time. While in Paris, Boulez introduced himself to Olivier Messiaen, a distinguished composer at the time.<sup>3</sup> It was here where Boulez received most of his musical education. From thereon, it's clear that Boulez used his background in mathematics to help compose his music.
+        </div>
+        <br/>
+        <div className="blurb">
           Each page will feature a compositional method Boulez used, explain the mathematics behind the method, provide examples from Boulez's own works, and contain a tool that allows users to play with the compositional method. At the moment, pages have been developed for
         </div>
         <br/>
@@ -42,9 +46,11 @@ function App() {
       </Container>
       <Navbar bg="light" variant="light" expand="lg" className="Footer">
         <Container>
-      1. Igor Toronyilalic, “Theartsdesk Q&A: Composer Pierre Boulez,” theartsdesk.com, January 7, 2016, https://www.theartsdesk.com/classical-music/theartsdesk-qa-composer-pierre-boulez.
-      <br/>
-      2. Nicholas Smith, “React-Abc,” GitHub, June 16, 2018, https://github.com/fuhton/react-abc.
+          1. Igor Toronyilalic, “Theartsdesk Q&A: Composer Pierre Boulez,” theartsdesk.com, January 7, 2016, https://www.theartsdesk.com/classical-music/theartsdesk-qa-composer-pierre-boulez.
+          <br/>
+          2. Nicholas Smith, “React-Abc,” GitHub, June 16, 2018, https://github.com/fuhton/react-abc.
+          <br/>
+          3. Tobias Bleek, “Explore the Score | Pierre Boulez: Notations | History and Context  | a Journeyman Composition,” explorethescore.org, n.d., https://explorethescore.org/pierre-boulez-douze-notations-history-and-context-a-journeyman-composition.html.
         </Container>
       </Navbar>
     </React.Fragment>

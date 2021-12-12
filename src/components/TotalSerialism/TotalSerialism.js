@@ -88,10 +88,10 @@ class TotalSerialism extends React.Component {
           </Row>
           <Row className="content">
             <p>
-              Total serialism focuses on the idea of applying serial techniques  to other aspects of music, not just pitch classes. As a high level discussion of serialism, the technique order the "12 notes of the equal-tempered chromatic scale (i.e. the 12 pitch classes) so that each appears once."<sup>3</sup>
+              Total serialism focuses on the idea of applying serial techniques  to other aspects of music, not just pitch classes. As a high level discussion of serialism, the technique order the "12 notes of the equal-tempered chromatic scale (i.e. the 12 pitch classes) so that each appears once."<sup>4</sup>
             </p>
             <p>
-              These serial techniques can be applied to rhythm, dynamics, articulation, etc. For this webapp, we will focus on rhythmic serialism where pitch duration is based on a "‘chromatic’ duration series – one consisting of 12 values, each a different whole number of demisemiquavers from one to 12."<sup>3</sup> For example, numbers can be assigned to pitch durations in ascending order. Boulez specifically used the duration set from Division I of Olivier Messiaen's <i>Mode de valeurs</i> that "begins with a thirty-second note, and each succeeding duration is increased by that value, so that the last is a dotted quarter note."<sup>4</sup> Below is a picture with the corresponding pitch duration classes defined by Messiaen's Division I pitch duration organization mentioned in Boulez's book <i>Orientations: Collected Writings</i>.<sup>5</sup>
+              These serial techniques can be applied to rhythm, dynamics, articulation, etc. For this webapp, we will focus on rhythmic serialism where pitch duration is based on a "‘chromatic’ duration series – one consisting of 12 values, each a different whole number of demisemiquavers from one to 12."<sup>4</sup> For example, numbers can be assigned to pitch durations in ascending order. Boulez specifically used the duration set from Division I of Olivier Messiaen's <i>Mode de valeurs</i> that "begins with a thirty-second note, and each succeeding duration is increased by that value, so that the last is a dotted quarter note."<sup>5</sup> Below is a picture with the corresponding pitch duration classes defined by Messiaen's Division I pitch duration organization mentioned in Boulez's book <i>Orientations: Collected Writings</i>.<sup>6</sup>
             </p>
             <div className="img-container">
               <img src={Pitch_Duration_Organization} alt="Messiaen Division I"/>
@@ -131,28 +131,28 @@ class TotalSerialism extends React.Component {
               An important thing to note is that pitch duration organization can easily be modified to start at a different pitch duration, for example the number 1 might correspond to a 16th note instead of a 32nd note.
             </p>
             <p>
-              Taking the ideas from pitch duration organization, Boulez also serializes other musical factors, such as dynamics, articulations, tempi, etc. in a similar fashion. In fact, Boulez believed that "a series in general can be defined by a frequency function f(F), which may be extended to a duration function f(t), an intensity function f(i), etc., where the function does not change, but only the variable changes."<sup>5</sup> This means that the same serial organization or function can be applied to multiple factors of music.
+              Taking the ideas from pitch duration organization, Boulez also serializes other musical factors, such as dynamics, articulations, tempi, etc. in a similar fashion. In fact, Boulez believed that "a series in general can be defined by a frequency function f(F), which may be extended to a duration function f(t), an intensity function f(i), etc., where the function does not change, but only the variable changes."<sup>6</sup> This means that the same serial organization or function can be applied to multiple factors of music.
             </p>
             <p>
               An example of where Boulez used serial pitch duration is in his <i>Structures Ia</i>. Looking at the first couple of measures of the movement, one can see that the pitches and pitch durations are based on the pitch class set (3 2 9 10 7 6 4 1 0 10 5 11), which corresponds to (E♭ D A, A♭, G, F#, E, C#, C, B♭, F, B). In particular
             </p>
             <ul>
               <li> 
-                Notes for the piano 1 part are determined by P<sub>0</sub> (translation by 0) so the pitch class set is (3 2 9 10 7 6 4 1 0 10 5 11) and notes are (E♭ D A, A♭, G, F#, E, C#, C, B♭, F, B). Furthermore, these pitches are assigned ordinal numbers in the following manner:<sup>4</sup>
+                Notes for the piano 1 part are determined by P<sub>0</sub> (translation by 0) so the pitch class set is (3 2 9 10 7 6 4 1 0 10 5 11) and notes are (E♭ D A, A♭, G, F#, E, C#, C, B♭, F, B). Furthermore, these pitches are assigned ordinal numbers in the following manner:<sup>5</sup>
                 <div className="img-container">
                   <img src={P1_Ordinal} alt="Piano 1 Ordinals"/>
                 </div> 
                 The ordinal numbers will be important when analyzing pitch durations
               </li>
-              <li> Pitch durations for the piano 1 part are determined by RI<sub>4</sub> (retrograde inversion by 4) so the pitch class set is (11 5 0 10 9 6 4 3 2 1 8 7), which corresponds to (B F C B♭ A F# E E♭ D C# A♭ G). However, since we are dealing with pitch duration, we map each pitch class to its respective ordinal number, resulting in the pitch duration set is (12 11 9 10 3 6 7 1 2 8 4 5). Ignoring the pitch classes of the notes, these values are the length of the note, in terms of multiplies of 32nd notes, and determine the order in which pitch durations occur. For example, the first two notes of the piano 1 part are 12 times the length of a 32nd note (dotted quarter) and 11 times the length of 32nd note, respectively.<sup>4</sup> </li>
-              <li> Notes for the piano 2 part are determined by I<sub>0</sub> (inversion by 0) so the pitch class set is (3 4 9 10 11 0 2 5 6 8 1 7) and notes are (E♭ E A B♭ B C D F F# A♭ C# G).<sup>4</sup> </li>
-              <li> Pitch durations for the piano 2 part are determined by R<sub>8</sub> (retrograde by 8) so the pitch class set is (7 1 6 8 9 0 2 3 4 5 10 11), which corresponds to (G C# F# A♭ A C D E♭ E F B♭ B). However, since we are dealing with pitch duration, we map each pitch class to its respective ordinal number, resulting in the pitch duration set is (5 8 6 4 3 9 2 1 7 11 10 12). Ignoring the pitch classes of the notes, these values are the length of the note, in terms of multiplies of 32nd notes, and determine the order in which pitch durations occur. For example, the first two notes of the piano 2 part are 5 times the length of a 32nd note and 8 times the length of 32nd note (eighth note), respectively.<sup>4</sup> </li>
+              <li> Pitch durations for the piano 1 part are determined by RI<sub>4</sub> (retrograde inversion by 4) so the pitch class set is (11 5 0 10 9 6 4 3 2 1 8 7), which corresponds to (B F C B♭ A F# E E♭ D C# A♭ G). However, since we are dealing with pitch duration, we map each pitch class to its respective ordinal number, resulting in the pitch duration set is (12 11 9 10 3 6 7 1 2 8 4 5). Ignoring the pitch classes of the notes, these values are the length of the note, in terms of multiplies of 32nd notes, and determine the order in which pitch durations occur. For example, the first two notes of the piano 1 part are 12 times the length of a 32nd note (dotted quarter) and 11 times the length of 32nd note, respectively.<sup>5</sup> </li>
+              <li> Notes for the piano 2 part are determined by I<sub>0</sub> (inversion by 0) so the pitch class set is (3 4 9 10 11 0 2 5 6 8 1 7) and notes are (E♭ E A B♭ B C D F F# A♭ C# G).<sup>5</sup> </li>
+              <li> Pitch durations for the piano 2 part are determined by R<sub>8</sub> (retrograde by 8) so the pitch class set is (7 1 6 8 9 0 2 3 4 5 10 11), which corresponds to (G C# F# A♭ A C D E♭ E F B♭ B). However, since we are dealing with pitch duration, we map each pitch class to its respective ordinal number, resulting in the pitch duration set is (5 8 6 4 3 9 2 1 7 11 10 12). Ignoring the pitch classes of the notes, these values are the length of the note, in terms of multiplies of 32nd notes, and determine the order in which pitch durations occur. For example, the first two notes of the piano 2 part are 5 times the length of a 32nd note and 8 times the length of 32nd note (eighth note), respectively.<sup>5</sup> </li>
             </ul>
             <p>
-              Throughout the movement, pitch and duration are determined by pairings, similar to the one above. In particular, the "first progression (mm. 1-64) displays P-I pairings for pitch and RI-R for duration; the second involves combinations of RI-R for pitch and I-P for duration."<sup>4</sup>
+              Throughout the movement, pitch and duration are determined by pairings, similar to the one above. In particular, the "first progression (mm. 1-64) displays P-I pairings for pitch and RI-R for duration; the second involves combinations of RI-R for pitch and I-P for duration."<sup>5</sup>
             </p>
             <p>
-              Below is a score of the first few measures of <i>Structures Ia</i> provided by Alexander Street.<sup>6</sup>
+              Below is a score of the first few measures of <i>Structures Ia</i> provided by Alexander Street.<sup>7</sup>
             </p>
             <div className="img-container">
               <img src={Structures_Ia} alt="Structures Ia" className="music"/>
@@ -165,13 +165,13 @@ class TotalSerialism extends React.Component {
         </Container>
         <Navbar bg="light" variant="light" expand="lg" className="Footer">
           <Container>
-            3. Paul Griffiths, “Serialism,” Oxford Music Online, 2001, https://doi.org/10.1093/gmo/9781561592630.article.25459.
+            4. Paul Griffiths, “Serialism,” Oxford Music Online, 2001, https://doi.org/10.1093/gmo/9781561592630.article.25459.
             <br/>
-            4. Lynden Deyoung, “Pitch Order and Duration Order in Boulez’ Structure Ia,” Perspectives of New Music 16, no. 2 (1978): 27, https://doi.org/10.2307/832676, 2.
+            5. Lynden Deyoung, “Pitch Order and Duration Order in Boulez’ Structure Ia,” Perspectives of New Music 16, no. 2 (1978): 27, https://doi.org/10.2307/832676, 2.
             <br/>
-            5. Pierre Boulez and Jean-Jacques Nattiez, Orientations : Collected Writings (London: Faber And Faber, 1990), 140-141.
+            6. Pierre Boulez and Jean-Jacques Nattiez, Orientations : Collected Writings (London: Faber And Faber, 1990), 140-141.
             <br/>
-            6. Pierre Boulez, Structures for 2 Pianos, 1st Book, Universal Edition, 1955, https://search.alexanderstreet.com/view/work/bibliographic_entity%7Cscore%7C554289.
+            7. Pierre Boulez, Structures for 2 Pianos, 1st Book, Universal Edition, 1955, https://search.alexanderstreet.com/view/work/bibliographic_entity%7Cscore%7C554289.
           </Container>
         </Navbar>
       </React.Fragment>
