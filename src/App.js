@@ -26,7 +26,7 @@ function App() {
         </div>
         <br/>
         <div className="blurb">
-          Interestingly enough, Boulez originally was studying mathematics before he move "from Lyons to Paris in order to devote himself entirely to music" in 1943.<sup>3</sup> He was 18 years old at the time. While in Paris, Boulez introduced himself to Olivier Messiaen, a distinguished composer at the time.<sup>3</sup> It was here where Boulez received most of his musical education. From thereon, it's clear that Boulez used his background in mathematics to help compose his music.
+          Interestingly enough, Boulez originally was studying mathematics before he move "from Lyons to Paris in order to devote himself entirely to music" in 1943.<sup>3</sup> He was 18 years old at the time. While in Paris, Boulez introduced himself to Olivier Messiaen, a distinguished composer at the time.<sup>3</sup> It was here where Boulez received most of his musical education. From thereon, it's clear that Boulez used his background in mathematics to help compose his music, which ultimately helped him develop total serialism.
         </div>
         <br/>
         <div className="blurb">
