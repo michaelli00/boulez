@@ -45,7 +45,7 @@ function PitchMultiplication(props) {
         </Row>
         <Row className="content">
           <p>
-            The idea behind pitch multiplication is to take two sets from a group of pitch class sets and "sum of every possible pairing between them".<sup>8</sup> Note that any duplicate pitch classes in the resulting set are removed. For example, let a = (1 2) and b = (3 4) be pitch class sets. Then the pitch multiplication of these two sets, denoted ab, yields (4 5 6). This comes from
+            The idea behind pitch multiplication is to take two sets from a group of pitch class sets and sum "every possible pairing between them".<sup>8</sup> Note that any duplicate pitch classes in the resulting set are removed. For example, let a = (1 2) and b = (3 4) be pitch class sets. Then the pitch multiplication of these two sets, denoted ab, yields (4 5 6). This comes from
           </p>
           <ul>
             <li> 1 + 3  = 4 </li>
@@ -187,10 +187,10 @@ function PitchMultiplication(props) {
             </tbody>
           </Table>
           <p>
-            For example, taking frequency groups b and c from series I, multiplying them to gives the group bc = (11 2 10 1 7 8).
+            For example, taking frequency groups b and c from series I, multiplying them gives the group bc = (11 2 10 1 7 8).
           </p>
           <p>
-            Some of the pitch class sets from the 1st, 3rd, and 7th movements were derived from multiplying various harmonic fields. For example, the pitch classes used in measure 3 of the 3rd movement comes directly from multiplying harmonic fields b and c to get the group bc = (11 2 10 1 7 8), coresponding to the notes (B D B♭ D♭ G A♭).<sup>8</sup>
+            Some of the pitch class sets from the 1st, 3rd, and 7th movements were derived from multiplying various harmonic fields. For example, the pitch classes used in measure 3 of the 3rd movement comes directly from multiplying harmonic fields b and c to get the group bc = (11 2 10 1 7 8), corresponding to the notes (B D B♭ D♭ G A♭).<sup>8</sup>
           </p>
           <div className="img-container">
             <img src={PM_Mvmt3} alt="Le marteau sans maître mvmt 3" className="mvmt3"/>
